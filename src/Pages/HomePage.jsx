@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 
 import HealthTable from "../Components/HealthTable.jsx";
 import {useNavigate} from "react-router";
+import Categories from "../Components/Categories.jsx";
 
 function HomePage(props) {
 
@@ -19,7 +20,7 @@ function HomePage(props) {
         <div className={"mt-5"}>
 
             { props?.user !==0 ?
-                <HealthTable /> : <></>
+                <Categories /> : <></>
             }
 
 
